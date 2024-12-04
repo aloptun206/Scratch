@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>El pescaíto | Programación de videojuegos con Scratch </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Aida López Túnez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-33"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Programación de videojuegos con Scratch</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programación de videojuegos con Scratch</a></li>
+   <li><a href="qu_es_scratch.html" class="daddy">¿Qué es Scratch?</a>
+   <ul class="other-section">
+      <li><a href="registro_y_acceso.html" class="no-ch">Registro y acceso</a></li>
+      <li><a href="compartir_proyectos.html" class="no-ch">Compartir proyectos</a></li>
+   </ul>
+   </li>
+   <li><a href="mi_primer_proyecto.html" class="daddy">Mi primer proyecto</a>
+   <ul class="other-section">
+      <li><a href="fondos.html" class="no-ch">Fondos</a></li>
+      <li><a href="objetos.html" class="no-ch">Objetos</a></li>
+      <li><a href="acciones.html" class="no-ch">Acciones</a></li>
+   </ul>
+   </li>
+   <li><a href="movimiento_en_bucle.html" class="daddy">Movimiento en bucle</a>
+   <ul class="other-section">
+      <li><a href="el_murcilago.html" class="no-ch">El murciélago</a></li>
+   </ul>
+   </li>
+   <li><a href="eventos.html" class="daddy">Eventos</a>
+   <ul class="other-section">
+      <li><a href="el_fantasma.html" class="no-ch">El fantasma</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="variables_e_interaccin_de_objetos.html" class="current-page-parent daddy">Variables e interacción de objetos</a>
+   <ul>
+      <li id="active"><a href="el_pescato.html" class="active no-ch">El pescaíto</a></li>
+   </ul>
+   </li>
+   <li><a href="autora_y_licencia.html" class="no-ch">Autoría y Licencia</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="variables_e_interaccin_de_objetos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="autora_y_licencia.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">El pescaíto</h1></header>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id138">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">TAREA 3: El pescaíto</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta138_150_2" class="block iDevice_content">
+<div class="pbl-task-description"><p>En esta práctica vamos a introducir bastantes novedades. Por un lado, vamos a aprender a crear nuestros propios EVENTOS a través del envío y recepción de mensajes, y además vamos a comenzar a trabajar el uso de variables.</p>
+<p>Para ello, vamos a crear un juego en el que tendremos dos objetos: un pez pequeño y un tiburón (del cual escogeremos su disfraz con la boca abierta). El fin del juego es que el tiburón va a perseguir al pez para comérselo y nosotros deberemos mover el pez con las flechas de movimiento para evitar ser cazados. Además, tendremos 3 vidas antes de que el juego termine.</p>
+<p>Vamos a dar unos pasos para el desarrollo de este juego:</p>
+<p><strong>PASO 1.</strong> Creamos los objetos y les ponemos un fondo adecuado. Recordad que el tiburón debe tener el disfraz de la boca abierta y reduce el tamaño del pez a una talla adecuada.</p>
+<p><img src="img0.12.png" width="766" height="578" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><strong>PASO 2.</strong> Al tocar bandera tanto el pez como el tiburón deberán colocarse en extremos opuestos de la pantalla (función de movimiento IR A). Además, deberemos establecer el estilo de rotación del pez a izquierda-derecha y el del tiburón a en todas direcciones.</p>
+<p><strong>PASO 3.</strong> Le damos funcionalidad de movimiento al pez con las teclas de movimiento (arriba, abajo, izquierda y derecha).</p>
+<p><strong>PASO 4.</strong> Al inicio del evento bandera del tiburón, además de colocarlo en un extremo (como se ha indicado anteriormente), inicializaremos la variable Vidas a 3 mediante la función DAR A Vidas EL VALOR 3. La variable Vidas habrá debido ser creada previamente.</p>
+<p><img src="img1.6.png" width="767" height="578" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><strong>PASO 5.</strong> El tiburón, después de inicializar su posición y la variable Vidas, entrará en un bucle infinito donde perseguirá lentamente (MOVER 1 paso) al pez de forma autómata (APUNTAR HACIA). Después de cada movimiento (MOVER 1 paso) comprobaremos si está tocando al pez, y si es así realizaremos lo siguiente:</p>
+<ol>
+<li>Disminuimos las vidas en 1 (SUMAR A Vidas -1).</li>
+<li>Enviamos el mensaje "comido" (que reciben el resto de objetos).</li>
+<li>Comprobamos si nos quedan más vidas:
+<ul>
+<li>Si nos quedan más vidas, colocamos al tiburón en la posición inicial (IR A).</li>
+<li>Si no nos quedan vidas, enviamos el mensaje "fin" (que reciben el resto de objetos), el tiburón dirá GAME OVER y lanzaremos la función de control de DETENER TODOS.</li>
+</ul>
+</li>
+</ol>
+<p><img src="img2.5.png" width="583" height="439" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><strong>PASO 6.</strong> Finalmente, debemos terminar la funcionalidad del pez. Para ello debemos utilizar los eventos "comido" y "fin" que ha creado el tiburón.</p>
+<ul>
+<li>Para el evento "comido" el pez simplemente volverá a su posición inicial.</li>
+<li>Para el evento "fin" el pez cambiará de color a rojo (podéis crear un disfraz para ello) y dirá ¡OH NO! ME HAN COMIDO.</li>
+</ul>
+<p><img src="img3.4.png" width="766" height="577" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>Es posible que debáis añadir algún detallito para que el juego esté perfecto, así que ánimo y a por ello.</p>
+<p>Añade instrucciones y créditos, y comparte el proyecto para que sea público.</p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Ejemplo de solución" /></div><div class="feedback js-feedback js-hidden"><p><strong>Programación del objeto PEZ</strong></p>
+<p style="text-align: center;"><img src="img1.7.png" alt="" /></p>
+<p style="text-align: left;"><strong> </strong></p>
+<p style="text-align: left;"><strong>Programación del objeto TIBURÓN</strong></p>
+<p style="text-align: center;"><img src="img1.7.png" alt="" width="586" height="1202" /><strong></strong></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="variables_e_interaccin_de_objetos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="autora_y_licencia.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>
