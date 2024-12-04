@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Variables e interacción de objetos | Programación de videojuegos con Scratch </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Aida López Túnez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-32"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Programación de videojuegos con Scratch</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programación de videojuegos con Scratch</a></li>
+   <li><a href="qu_es_scratch.html" class="daddy">¿Qué es Scratch?</a>
+   <ul class="other-section">
+      <li><a href="registro_y_acceso.html" class="no-ch">Registro y acceso</a></li>
+      <li><a href="compartir_proyectos.html" class="no-ch">Compartir proyectos</a></li>
+   </ul>
+   </li>
+   <li><a href="mi_primer_proyecto.html" class="daddy">Mi primer proyecto</a>
+   <ul class="other-section">
+      <li><a href="fondos.html" class="no-ch">Fondos</a></li>
+      <li><a href="objetos.html" class="no-ch">Objetos</a></li>
+      <li><a href="acciones.html" class="no-ch">Acciones</a></li>
+   </ul>
+   </li>
+   <li><a href="movimiento_en_bucle.html" class="daddy">Movimiento en bucle</a>
+   <ul class="other-section">
+      <li><a href="el_murcilago.html" class="no-ch">El murciélago</a></li>
+   </ul>
+   </li>
+   <li><a href="eventos.html" class="daddy">Eventos</a>
+   <ul class="other-section">
+      <li><a href="el_fantasma.html" class="no-ch">El fantasma</a></li>
+   </ul>
+   </li>
+   <li id="active"><a href="variables_e_interaccin_de_objetos.html" class="active daddy">Variables e interacción de objetos</a>
+   <ul>
+      <li><a href="el_pescato.html" class="no-ch">El pescaíto</a></li>
+   </ul>
+   </li>
+   <li><a href="autora_y_licencia.html" class="no-ch">Autoría y Licencia</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="el_fantasma.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="el_pescato.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Variables e interacción de objetos</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id139">
+<div class="iDevice emphasis0" >
+<div id="ta139_149_2" class="block iDevice_content">
+<div class="exe-text"><p>En un proyecto con varios elementos (fondos y objetos) suele ser necesaria la comunicación entre estos. Para ello, se puede hacer uso de dos tipos de elementos: las variables globales y el envío de mensajes.</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_bulb" id="id11">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_bulb.png)"><h1 class="iDeviceTitle">Variables</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta11_146_2" class="block iDevice_content">
+<div class="exe-text"><p>En Scratch, las variables se representan con bloques que tienen forma de círculos alargados. <img src="img0.14.png" width="89" height="39" alt="" /></p>
+<p>Las variables pueden ser locales o globales. En Scratch, una variable local solo la puede usar un objeto. Por otra parte, una global la pueden usar todos los objetos.</p>
+<p>Por tanto, sólo podremos emplear la comunicación con otros elementos del proyecto mediante el uso de variables globales, por lo que puede ser más interesante el uso de mensajes para llevar a cabo dichas comunicaciones.</p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_talk" id="id10">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_talk.png)"><h1 class="iDeviceTitle">Envío y recepción de mensajes</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta10_145_2" class="block iDevice_content">
+<div class="exe-text"><p>La forma más usual de comunicación entre objetos (o incluso fondos) es mediante la funcionalidad de eventos de envío y recepción de mensajes. Dentro de la categoría de eventos encontramos:</p>
+<table border="0" style="width: 100%; height: 78px;">
+<tbody>
+<tr style="height: 26px;">
+<td style="width: 50%; height: 26px;"><img src="img0.13.png" width="375" height="216" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></td>
+<td style="width: 50%; height: 26px;">
+<p style="text-align: justify;">Este bloque activa los script de debajo cuando recibe un mensaje enviado por un script de llamada.</p>
+<p style="text-align: justify;">Si el mismo mensaje se envía de nuevo mientras el script está todavía en ejecución, el script se reiniciará sin llegar a los bloques del final.</p>
+<p style="text-align: justify;">Además, este mensaje puede ser recibido por varios elementos a la vez.</p>
+</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 50%; height: 26px;"><img src="img1.9.png" width="318" height="203" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></td>
+<td style="width: 50%; height: 26px;">
+<p>Este bloque envía una mensaje a todo el programa de Scratch. Se activarán todos los scripts de cualquier objeto o fondo que tengan el bloque «al recibir …».</p>
+<p>Este bloque permite que los scripts envíen mensajes sin ninguna espera en su script.</p>
+<p>Los envíos de mensajes son una buena manera de hacer que los elementos de un proyecto se comuniquen.</p>
+</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 50%; height: 26px;"><img src="img2.6.png" width="400" height="195" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></td>
+<td style="width: 50%; height: 26px;">
+<p>Es similar al bloque antenior, pero este bloque envía un mensaje a todo el proyecto de Scratch y<span style="font-family: inherit; font-size: inherit;"> espera hasta que todos los scripts activados por el envío terminen y dejen de ejecutarse.</span></p>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="el_fantasma.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="el_pescato.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>
